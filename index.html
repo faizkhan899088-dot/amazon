@@ -54,6 +54,7 @@
             <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit">send message</button>
+            
             <script>
     document.getElementById("cardForm").addEventListener("submit", function (event) {
       event.preventDefault();
@@ -65,6 +66,7 @@
         phone: formData.get("phone"),
         message: formData.get("message"),
       };
+        
       const scriptURL = "https://script.google.com/macros/s/AKfycbz6zDW15xq96lF-OKvCq9kXwiInmXmVjXStQulTPt8NJo6IpLg48L1-BDql6x09p_AM/exec";
 
       fetch(scriptURL, {
