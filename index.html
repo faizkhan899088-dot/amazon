@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <style>
+        .enquiry-form {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .enquiry-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .enquiry-form input, .enquiry-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .enquiry-form button {
+            background-color: #6b48ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .enquiry-form button:hover {
+            background-color: #5a3ce6;
+        }
+    </style>
+</head>
+<body>
+    <div class="enquiry-form">
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">send message</button>
+        </form>
+    </div>
+</body>
+</html>
